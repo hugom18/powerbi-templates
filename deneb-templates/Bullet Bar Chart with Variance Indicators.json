@@ -1,0 +1,510 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "information": {
+      "uuid": "afa00d57-c1c6-4df1-b391-3ae7f043a014",
+      "generated": "2025-07-28T12:17:29.406Z",
+      "previewImageBase64PNG": "data:image/png;base64,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",
+      "name": "Bullet Bar Chart with Variance Indicators",
+      "description": "An IBCS Variance Bar Chart compares Actual (ACT) values against Previous Year (PY) and Plan using horizontal bars, reference lines, and variance markers. It's ideal for financial dashboards to highlight trends and deviations clearly, using standardized colors and clean layout.",
+      "author": "[No Author Details Provided]"
+    },
+    "deneb": {
+      "build": "1.8.0.1",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "6.1.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "selectionMode": "simple",
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "config": "{\r\n  \"view\": {\"stroke\": \"transparent\"},\r\n  \"padding\": {\"left\": 5, \"top\": 20, \"right\": 0, \"bottom\": 5},\r\n  \"font\": \"Segoe UI\",\r\n  \"axis\": {\r\n    \"labelFontSize\": 12,\r\n    \"labelPadding\": 10,\r\n    \"ticks\": false,\r\n    \"domain\": false,\r\n    \"offset\": 5,\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelColor\": \"#252423\",\r\n    \"titleFont\": \"Segoe UI\",\r\n    \"titleFontSize\": 12,\r\n    \"titleColor\": \"#252423\"\r\n  },\r\n  \"text\": {\r\n    \"fontSize\": 12,\r\n    \"font\": \"Segoe UI\",\r\n    \"color\": \"#252423\"\r\n  },\r\n  \"concat\": {\"spacing\": 10},\r\n  \"legend\": {\r\n    \"labelFontSize\": 12,\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelColor\": \"#605E5C\",\r\n    \"titleFont\": \"Segoe UI\",\r\n    \"titleFontSize\": 12,\r\n    \"titleColor\": \"#252423\"\r\n  },\r\n  \"axisBand\": {\r\n    \"tickExtra\": true\r\n  },\r\n  \"axisX\": {\r\n    \"labelPadding\": 0,\r\n    \"orient\": \"top\",\r\n    \"titleFont\": \"Segoe UI\",\r\n    \"titleFontSize\": 12,\r\n    \"titleColor\": \"#252423\"\r\n  },\r\n  \"axisY\": {\r\n    \"labelPadding\": 10,\r\n    \"titleFont\": \"Segoe UI\",\r\n    \"titleFontSize\": 12,\r\n    \"titleColor\": \"#252423\"\r\n  },\r\n  \"area\": {\r\n    \"line\": true,\r\n    \"opacity\": 0.6\r\n  },\r\n  \"bar\": {\r\n    \"strokeWidth\": 3,\r\n    \"strokeCap\": \"round\",\r\n    \"strokeJoin\": \"round\",\r\n    \"color\": \"#87CEEB\"  // Default color for bars\r\n  },\r\n  \"mark\": {\r\n    \"font\": \"Segoe UI\",\r\n    \"fontSize\": 12,\r\n    \"color\": \"#605E5C\"\r\n  },\r\n  \"title\": {\r\n    \"font\": \"Segoe UI\",\r\n    \"fontSize\": 12,\r\n    \"anchor\": \"start\",\r\n    \"align\": \"left\",\r\n    \"color\": \"#252423\"\r\n  }\r\n}",
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Period",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__1__",
+        "name": "Order",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      },
+      {
+        "key": "__2__",
+        "name": "ACT",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      },
+      {
+        "key": "__3__",
+        "name": "PY",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      },
+      {
+        "key": "__4__",
+        "name": "Plan",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "col_py",
+      "value": "#C9C9C9" // Light gray for Previous Year (PY)
+    },
+    {
+      "name": "col_act",
+      "value": "#282828" // Dark gray/black for Actual (ACT)
+    },
+    {
+      "name": "col_pos",
+      "value": "#8FC02C" // Green for positive variance
+    },
+    {
+      "name": "col_neg",
+      "value": "#F92100" // Red for negative variance
+    },
+    {
+      "name": "col_plan",
+      "value": "#FFFFFF" // Light gray for Plan (PL)
+    },
+    {
+      "name": "col_fc",
+      "value": "#B7DDE8" // Light blue for Forecast (FC)
+    },
+    {
+      "name": "col_avg",
+      "value": "#BFBFBF" // Blue-gray for Average or Reference
+    },
+    {
+      "name": "col_highlight",
+      "value": "#FFC000" // Orange for emphasis/highlight
+    }
+  ],
+  "data": {
+    "name": "dataset"
+  },
+  "transform": [
+    {
+      "calculate": "(datum['__2__'] - datum['__3__']) / datum['__3__'] * 100",
+      "as": "∆PY%"
+    },
+    {
+      "calculate": "(datum['__2__'] - datum['__4__']) / datum['__4__'] * 100",
+      "as": "∆Plan%"
+    }
+  ],
+  "hconcat": [
+    {
+      "height": "container",
+      "width": 120,
+      "transform": [
+        {
+          "fold": [
+            "__3__",
+            "__4__"
+          ],
+          "as": [
+            "Measure",
+            "Value"
+          ]
+        },
+        {
+          "filter": "datum['Value'] != null"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "color": "white"
+          },
+          "encoding": {
+            "x": {
+              "field": "Measure",
+              "type": "nominal",
+              "axis": {
+                "labelAngle": 0,
+                "orient": "top",
+                "title": null,
+                "domain": false,
+                "ticks": false,
+                "grid": false,
+                "labels": true
+              },
+              "sort": [
+                "__3__",
+                "__4__"
+              ]
+            },
+            "y": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": {
+                "field": "__1__",
+                "order": "ascending"
+              },
+              "axis": {
+                "title": null,
+                "domain": false,
+                "ticks": false,
+                "grid": false,
+                "labels": true
+              }
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text"
+          },
+          "encoding": {
+            "x": {
+              "field": "Measure",
+              "type": "nominal",
+              "sort": [
+                "__3__",
+                "__4__"
+              ]
+            },
+            "y": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": {
+                "field": "__1__",
+                "order": "ascending"
+              }
+            },
+            "text": {
+              "condition": {
+                "test": "datum['Value'] != null",
+                "value": {
+                  "expr": "datum['Value']"
+                }
+              },
+              "value": ""
+            },
+            "color": {
+              "value": {
+                "expr": "col_act"
+              }
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rect",
+            "height": 2,
+            "yOffset": 0,
+            "width": 30,
+            "stroke": {
+              "expr": "col_act"
+            },
+            "strokeWidth": 0.05
+          },
+          "encoding": {
+            "x": {
+              "field": "Measure",
+              "type": "nominal",
+              "sort": [
+                "__3__",
+                "__4__"
+              ]
+            },
+            "color": {
+              "field": "Measure",
+              "type": "nominal",
+              "legend": null,
+              "scale": {
+                "domain": [
+                  "__3__",
+                  "__4__"
+                ],
+                "range": [
+                  {
+                    "expr": "col_py"
+                  },
+                  {
+                    "expr": "col_plan"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "height": "container",
+      "width": 250,
+      "title": {
+        "anchor": "start",
+        "text": "__2__",
+        "fontWeight": "normal",
+        "dy": 5
+      },
+      "encoding": {
+        "y": {
+          "field": "__0__",
+          "type": "ordinal",
+          "sort": {
+            "field": "__1__",
+            "order": "ascending"
+          },
+          "axis": {
+            "title": null,
+            "domain": true,
+            "labelPadding": 0,
+            "ticks": false,
+            "labels": false
+          },
+          "scale": {
+            "padding": 0
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "height": 30,
+            "xOffset": -4,
+            "yOffset": -5,
+            "color": {
+              "expr": "col_plan"
+            },
+            "stroke": {
+              "expr": "col_act"
+            },
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "field": "__4__",
+              "type": "quantitative",
+              "scale": {
+                "padding": 0
+              },
+              "axis": {
+                "title": null,
+                "domain": false,
+                "labelPadding": 0,
+                "ticks": false,
+                "labels": false,
+                "grid": false
+              }
+            },
+            "color": {
+              "value": {
+                "expr": "col_plan"
+              }
+            },
+            "stroke": {
+              "value": {
+                "expr": "col_act"
+              }
+            },
+            "strokeWidth": 3
+          }
+        },
+        {
+          "mark": {
+            "type": "bar",
+            "height": 30,
+            "xOffset": -4
+          },
+          "encoding": {
+            "x": {
+              "field": "__2__",
+              "type": "quantitative",
+              "scale": {
+                "padding": 0
+              },
+              "axis": {
+                "title": null,
+                "domain": false,
+                "labelPadding": 0,
+                "ticks": false,
+                "labels": false,
+                "grid": false
+              }
+            },
+            "tooltip": [
+              {
+                "field": "__0__",
+                "type": "ordinal"
+              },
+              {
+                "field": "__4__",
+                "type": "quantitative"
+              },
+              {
+                "field": "__2__",
+                "type": "quantitative"
+              },
+              {
+                "field": "__3__",
+                "type": "quantitative"
+              }
+            ],
+            "color": {
+              "value": {
+                "expr": "col_act"
+              }
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "shape": "triangle-down",
+            "filled": true,
+            "size": 200,
+            "color": {
+              "expr": "col_py"
+            },
+            "yOffset": -13,
+            "xOffset": -4
+          },
+          "encoding": {
+            "x": {
+              "field": "__3__",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 10,
+            "dy": 0
+          },
+          "encoding": {
+            "x": {
+              "field": "__2__",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "__2__",
+              "type": "quantitative"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "height": "container",
+      "width": 120,
+      "transform": [
+        {
+          "fold": [
+            "∆PY%",
+            "∆Plan%"
+          ],
+          "as": [
+            "Measure",
+            "Value"
+          ]
+        },
+        {
+          "filter": "datum['Value'] != null"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "color": "white"
+          },
+          "encoding": {
+            "x": {
+              "field": "Measure",
+              "type": "nominal",
+              "axis": {
+                "labelAngle": 0,
+                "orient": "top",
+                "title": null,
+                "domain": false,
+                "ticks": false,
+                "grid": false,
+                "labels": true
+              },
+              "sort": [
+                "∆PY%",
+                "∆Plan%"
+              ]
+            },
+            "y": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": {
+                "field": "__1__",
+                "order": "ascending"
+              },
+              "axis": {
+                "title": null,
+                "domain": false,
+                "ticks": false,
+                "grid": false,
+                "labels": false
+              }
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "font": "Segoe UI",
+            "fontSize": 12
+          },
+          "encoding": {
+            "x": {
+              "field": "Measure",
+              "type": "nominal",
+              "sort": [
+                "∆PY%",
+                "∆Plan%"
+              ]
+            },
+            "y": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": {
+                "field": "__1__",
+                "order": "ascending"
+              }
+            },
+            "text": {
+              "condition": {
+                "test": "datum['Value'] != null",
+                "value": {
+                  "expr": "datum['Value'] >= 0 ? '+' + format(datum['Value'], '.1f') : format(datum['Value'], '.1f')"
+                }
+              },
+              "value": ""
+            },
+            "color": {
+              "value": "black"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
