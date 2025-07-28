@@ -1,0 +1,1001 @@
+{
+  "usermeta": {
+    "information": {
+      "uuid": "525471f9-4c43-425b-8940-240f51b82f69",
+      "generated": "2025-07-28T11:29:57.129Z",
+      "previewImageBase64PNG": "data:image/png;base64,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",
+      "name": "Year-Over-Year Analysis Dashboard",
+      "description": "[No Description Provided]",
+      "author": "Hugo Moreno"
+    },
+    "deneb": {
+      "build": "1.8.0.1",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "6.1.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "selectionMode": "simple",
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "config": "{\r\n\"view\": {\"stroke\": \"transparent\"},\r\n  \"font\": \"Segoe UI\",\r\n  \"title\": {\r\n    \"anchor\": \"middle\",\r\n    \"align\": \"center\",\r\n    \"offset\": 10,\r\n    \"fontSize\": 20,\r\n    \"fontWeight\": \"bold\",\r\n    \"fontStyle\": \"normal\",\r\n    \"subtitleFontSize\": 12,\r\n    \"subtitleFontStyle\": \"italic\"\r\n  },\r\n  \"axis\": {\r\n    \"ticks\": false,\r\n    \"grid\": false,\r\n    \"domain\": false,\r\n    \"labelFontSize\": 12,\r\n    \"titleFont\": \"wf_standard-font, helvetica, arial, sans-serif\",\r\n    \"titleFontSize\": 16,\r\n    \"titleFontWeight\": \"normal\"\r\n  },\r\n  \"axisQuantitative\": {\r\n    \"tickCount\": 5,\r\n    \"grid\": true,\r\n    \"gridDash\": [1, 5],\r\n    \"labelFlush\": false,\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelFontSize\": 12,\r\n    \"titleFont\": \"Segoe UI\",\r\n    \"titleFontSize\": 14,\r\n    \"titlePadding\": 10\r\n  },\r\n  \"axisX\": {\r\n    \"labelPadding\": 5,\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelFontSize\": 12,\r\n    \"labelAngle\": 0\r\n  },\r\n  \"axisY\": {\r\n    \"labelPadding\": 10,\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelFontSize\": 12,\r\n    \"titleFont\": \"Segoe UI\",\r\n    \"titleFontSize\": 14,\r\n    \"titlePadding\": 10\r\n  },\r\n  \"style\": {\r\n    \"bar_start_end\": {\r\n      \"stroke\": \"#aaa\",\r\n      \"strokeWidth\": 1,\r\n      \"color\": {\r\n        \"x1\": 1,\r\n        \"y1\": 1,\r\n        \"x2\": 1,\r\n        \"y2\": 0,\r\n        \"gradient\": \"linear\",\r\n        \"stops\": [\r\n          {\r\n            \"offset\": 0,\r\n            \"color\": \"#FFF\"\r\n          },\r\n          {\"offset\": 1, \"color\": \"#ccc\"}\r\n        ]\r\n      }\r\n    },\r\n    \"bar_connectors\": {\r\n      \"color\": \"#666\",\r\n      \"strokeWidth\": 1\r\n    },\r\n    \"rule_boundary\": {\r\n      \"color\": \"#aaa\",\r\n      \"strokeWidth\": 1,\r\n      \"strokeDash\": [1, 0]\r\n    },\r\n    \"rule_indicators\": {\r\n      \"color\": \"#aaa\",\r\n      \"strokeWidth\": 1,\r\n      \"strokeDash\": [1, 0]\r\n    }\r\n  },\r\n  \"text\": {\r\n    \"font\": \"Segoe UI\",\r\n    \"fontSize\": 12\r\n  },\r\n  \"header\": {\r\n    \"titleFont\": \"wf_standard-font, helvetica, arial, sans-serif\",\r\n    \"titleFontSize\": 16,\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelFontSize\": 13.333333333333332\r\n  },\r\n  \"legend\": {\r\n    \"titleFont\": \"Segoe UI\",\r\n    \"titleFontWeight\": \"bold\",\r\n    \"labelFont\": \"Segoe UI\",\r\n    \"labelFontSize\": 13.333333333333332,\r\n    \"symbolType\": \"circle\",\r\n    \"symbolSize\": 75\r\n  }\r\n}",
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Month",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__1__",
+        "name": "PY",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      },
+      {
+        "key": "__2__",
+        "name": "AC",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      },
+      {
+        "key": "__3__",
+        "name": "FC",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "name": "dataset"
+  },
+  "params": [
+    {
+      "name": "col_py",
+      "value": "#C9C9C9" // Light gray for Previous Year (PY)
+    },
+    {
+      "name": "col_act",
+      "value": "#282828" // Dark gray/black for Actual (ACT)
+    },
+    {
+      "name": "col_pos",
+      "value": "#8FC02C" // Green for positive variance
+    },
+    {
+      "name": "col_neg",
+      "value": "#F92100" // Red for negative variance
+    },
+    {
+      "name": "col_plan",
+      "value": "#D9D9D9" // Light gray for Plan (PL)
+    },
+    {
+      "name": "col_fc",
+      "value": "#B7DDE8" // Light blue for Forecast (FC)
+    },
+    {
+      "name": "col_avg",
+      "value": "#BFBFBF" // Blue-gray for Average or Reference
+    },
+    {
+      "name": "col_highlight",
+      "value": "#FFC000" // Orange for emphasis/highlight
+    }
+  ],
+  "title": "Year-Over-Year Analysis",
+  "transform": [
+    {
+      "calculate": "datum['__2__'] != null ? datum['__2__'] - datum['__1__'] : null",
+      "as": "Absolute Change AC"
+    },
+    {
+      "calculate": "datum['__2__'] == null ? datum['__3__'] - datum['__1__'] : null",
+      "as": "Absolute Change FC"
+    },
+    {
+      "calculate": "datum['__2__'] != null ? ((datum['__2__'] - datum['__1__']) / datum['__1__']) * 100 : null",
+      "as": "Percentage Change AC"
+    },
+    {
+      "calculate": "datum['__2__'] == null ? ((datum['__3__'] - datum['__1__']) / datum['__1__']) * 100 : null",
+      "as": "Percentage Change FC"
+    }
+  ],
+  "vconcat": [
+    {
+      "width": 800,
+      "height": 80,
+      "layer": [
+        {
+          // Bar for Percentage Change AC
+          "mark": {
+            "type": "bar",
+            "width": 4
+          },
+          "transform": [
+            {
+              "filter": "datum['Percentage Change AC'] != null"
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ],
+              "axis": null
+            },
+            "y": {
+              "field": "Percentage Change AC",
+              "type": "quantitative",
+              "axis": {
+                "title": "ΔPY%",
+                "grid": false,
+                "domain": false,
+                "labels": false,
+                "titleAngle": 0
+              }
+            },
+            "color": {
+              "condition": {
+                "test": "datum['Percentage Change AC'] >= 0",
+                "value": {
+                  "expr": "col_pos"
+                } // Green for positive
+              },
+              "value": {
+                "expr": "col_neg"
+              } // Red for negative
+            }
+          }
+        },
+        {
+          // Bar for Percentage Change FC
+          "mark": {
+            "type": "bar",
+            "width": 4
+          },
+          "transform": [
+            {
+              "filter": "datum['Percentage Change FC'] != null"
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Percentage Change FC",
+              "type": "quantitative"
+            },
+            "color": {
+              "condition": {
+                "test": "datum['Percentage Change FC'] >= 0",
+                "value": {
+                  "expr": "col_pos"
+                }
+              },
+              "value": {
+                "expr": "col_neg"
+              }
+            }
+          }
+        },
+        {
+          // Square marker for Percentage Change AC (black)
+          "mark": {
+            "type": "square",
+            "size": 150,
+            "color": "black"
+          },
+          "transform": [
+            {
+              "filter": "datum['Percentage Change AC'] != null"
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Percentage Change AC",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          // Striped square marker for Percentage Change FC
+          "mark": {
+            "type": "square",
+            "size": 150,
+            "stroke": "black",
+            "strokeWidth": 1,
+            "fill": {
+              "expr": "pbiPatternSVG('diagonal-stripe-4-90', col_act, 'transparent')"
+            }
+          },
+          "transform": [
+            {
+              "filter": "datum['Percentage Change FC'] != null"
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Percentage Change FC",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          // Text annotations for positives
+          "transform": [
+            {
+              "filter": "datum['Percentage Change AC'] >= 0"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": -20,
+            "color": {
+              "expr": "col_act"
+            },
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Percentage Change AC",
+              "type": "quantitative",
+              "scale": {
+                "zero": true,
+                "nice": true,
+                "padding": 20
+              }
+            },
+            "text": {
+              "field": "Percentage Change AC",
+              "type": "quantitative",
+              "format": "+d"
+            }
+          }
+        },
+        {
+          // Text annotations for negative  
+          "transform": [
+            {
+              "filter": "datum['Percentage Change AC'] < 0"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": 20,
+            "color": {
+              "expr": "col_act"
+            },
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Percentage Change AC",
+              "type": "quantitative",
+              "scale": {
+                "zero": true,
+                "nice": true,
+                "padding": 20
+              }
+            },
+            "text": {
+              "field": "Percentage Change AC",
+              "type": "quantitative",
+              "format": "+d"
+            }
+          }
+        },
+        {
+          // Text annotations for positive Fc
+          "transform": [
+            {
+              "filter": "datum['Percentage Change FC'] >= 0 && (datum['Percentage Change AC'] == null || datum['Percentage Change AC'] == '')"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": -20,
+            "color": {
+              "expr": "col_act"
+            },
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Percentage Change FC",
+              "type": "quantitative",
+              "scale": {
+                "zero": true,
+                "nice": true,
+                "padding": 20
+              }
+            },
+            "text": {
+              "field": "Percentage Change FC",
+              "type": "quantitative",
+              "format": "+d"
+            }
+          }
+        },
+        {
+          // Text annotations for negative fc values
+          "transform": [
+            {
+              "filter": "datum['Percentage Change FC'] < 0 && (datum['Percentage Change AC'] == null || datum['Percentage Change AC'] == '')"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": 20,
+            "color": {
+              "expr": "col_act"
+            },
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Percentage Change FC",
+              "type": "quantitative",
+              "scale": {
+                "zero": true,
+                "nice": true,
+                "padding": 20
+              }
+            },
+            "text": {
+              "field": "Percentage Change FC",
+              "type": "quantitative",
+              "format": "+d"
+            }
+          }
+        },
+        {
+          // Horizontal rule at y = 0
+          "mark": {
+            "type": "rule",
+            "color": "gray",
+            "size": 2
+          },
+          "encoding": {
+            "y": {
+              "datum": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 800,
+      "height": 80,
+      "layer": [
+        // Solid Bars for Absolute Change AC
+        {
+          "mark": {
+            "type": "bar",
+            "width": 30
+          },
+          "transform": [
+            {
+              "filter": "datum['Absolute Change AC'] != null"
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "axis": null,
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Absolute Change AC",
+              "type": "quantitative",
+              "axis": {
+                "title": "ΔPY",
+                "grid": false,
+                "domain": false,
+                "labels": false,
+                "titleAngle": 0
+              }
+            },
+            "color": {
+              "condition": {
+                "test": "datum['Absolute Change AC'] >= 0",
+                "value": {
+                  "expr": "col_pos"
+                }
+              },
+              "value": {
+                "expr": "col_neg"
+              }
+            }
+          }
+        },
+        // Striped Bars for Absolute Change FC
+        {
+          "mark": {
+            "type": "bar",
+            "width": 30,
+            "strokeWidth": 2,
+            "fill": {
+              "expr": "pbiPatternSVG('diagonal-stripe-3', datum['Absolute Change FC'] >= 0 ? col_pos : col_neg, 'transparent')"
+            }
+          },
+          "transform": [
+            {
+              "filter": "datum['Absolute Change FC'] != null"
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Absolute Change FC",
+              "type": "quantitative"
+            }
+          }
+        },
+        // Text Positive Actual 
+        {
+          "transform": [
+            {
+              "filter": "datum['Absolute Change AC'] >= 0"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": -10,
+            "color": {
+              "expr": "col_act"
+            },
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Absolute Change AC",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "Absolute Change AC",
+              "type": "quantitative",
+              "format": "+d"
+            }
+          }
+        },
+        // Text Negative Actual 
+        {
+          "transform": [
+            {
+              "filter": "datum['Absolute Change AC'] < 0"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": 10,
+            "color": {
+              "expr": "col_act"
+            },
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Absolute Change AC",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "Absolute Change AC",
+              "type": "quantitative",
+              "format": "+d"
+            }
+          }
+        },
+        // Text Positive FC 
+        {
+          "transform": [
+            {
+              "filter": "datum['Absolute Change FC'] >= 0 && (datum['Absolute Change AC'] == null || datum['Absolute Change AC'] == '')"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": -10,
+            "color": {
+              "expr": "col_act"
+            },
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Absolute Change FC",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "Absolute Change FC",
+              "type": "quantitative",
+              "format": "+d"
+            }
+          }
+        },
+        // Text Negative fc 
+        {
+          "transform": [
+            {
+              "filter": "datum['Absolute Change FC'] < 0 && (datum['Absolute Change AC'] == null || datum['Absolute Change AC'] == '')"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": 10,
+            "color": {
+              "expr": "col_act"
+            },
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Absolute Change FC",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "Absolute Change FC",
+              "type": "quantitative",
+              "format": "+d"
+            }
+          }
+        },
+        // Horizontal Rule at y = 0
+        {
+          "mark": {
+            "type": "rule",
+            "color": "gray",
+            "size": 2
+          },
+          "encoding": {
+            "y": {
+              "datum": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 800,
+      "height": 320,
+      "data": {
+        "name": "dataset"
+      },
+      "transform": [
+        {
+          "calculate": "datum['__2__'] == null ? datum['__3__'] : datum['__2__']",
+          "as": "ConditionalAC_FC"
+        },
+        {
+          "fold": [
+            "__1__",
+            "ConditionalAC_FC"
+          ],
+          "as": [
+            "Measure",
+            "Value"
+          ]
+        },
+        {
+          "calculate": "datum.Measure == 'Sum of PY' ? -5 : 5",
+          "as": "Offset"
+        }
+      ],
+      "layer": [
+        {
+          // Main bar layer for PY and AC
+          "mark": {
+            "type": "bar",
+            "size": 30,
+            "xOffset": 20,
+            "tooltip": true
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ],
+              "axis": {
+                "labels": true,
+                "labelAngle": 0,
+                "title": null // Remove axis title
+              }
+            },
+            "y": {
+              "field": "Value",
+              "type": "quantitative",
+              "axis": {
+                "title": null,
+                "grid": false,
+                "domain": false,
+                "labels": false,
+                "titleAngle": 0
+              }
+            },
+            "color": {
+              "condition": {
+                "test": "datum.Measure === 'ConditionalAC_FC' && datum['__2__'] != null",
+                "value": {
+                  "expr": "col_act"
+                } // Black color for AC
+              },
+              "field": "Measure",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "__1__"
+                ],
+                "range": [
+                  {
+                    "expr": "col_py"
+                  }
+                ] // Grey for PY
+              },
+              "legend": null // Remove legend
+            },
+            "xOffset": {
+              "field": "Offset"
+            }
+          }
+        },
+        {
+          // Layer for FC bars with diagonal stripe pattern
+          "transform": [
+            {
+              "filter": "datum.Measure === 'ConditionalAC_FC' && datum['__2__'] == null"
+            }
+          ],
+          "mark": {
+            "type": "bar",
+            "size": 30,
+            "xOffset": 10,
+            "tooltip": true,
+            "fill": {
+              "expr": "pbiPatternSVG('diagonal-stripe-1', col_act, 'white')"
+            }
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Value",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          // Text labels for AC and FC values
+          "transform": [
+            {
+              "filter": "datum.Measure == 'ConditionalAC_FC'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": -10,
+            "fontSize": 12,
+            "color": {
+              "expr": "col_act"
+            },
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "ordinal",
+              "sort": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            "y": {
+              "field": "Value",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "Value",
+              "type": "quantitative"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
